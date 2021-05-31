@@ -13,17 +13,17 @@ public class RomanInterpreter {
 
     public void interpretar(String numb){
         String input=numb;
-        context= new Context(input.replace(" "," "));
+        context= new Context(input.replace(" ",""));
         for (String word : input.split(" ")) {
-
             if(word.startsWith("I")){
                 parseTree.add(new TerminalI(word.length()));
+
             } else if (word.startsWith("V")){
+                parseTree.add(new TerminalV(word.length()));
 
             }else if (word.startsWith("X")){
-
+                parseTree.add(new TerminaX(word.length()));
             }
-
         }
 
     }
