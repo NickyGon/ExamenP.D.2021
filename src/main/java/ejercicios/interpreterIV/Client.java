@@ -2,8 +2,7 @@ package ejercicios.interpreterIV;
 
 public class Client {
     public static void main (String []args){
-        String interpretar="I II III IV";
-        // 1 2 3 4 5 1
+        String interpretar="I II III IV V VI VII VIII IX X";
 
         RomanInterpreter parser = new RomanInterpreter(interpretar);
 
